@@ -11,10 +11,6 @@
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">Home</a>
 
-    {% comment %}
-    The code below dynamically generates a sidebar nav of pages with
-    `layout: page` in the front-matter. See readme for usage.
-    {% endcomment %}
 
     {% assign pages_list = site.pages | sort:"url" %}
     {% for node in pages_list %}
@@ -26,10 +22,10 @@
     {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item"
-      href="{{ site.github.repo }}/archive/v{{ site.github.lastest_release }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-    <span class="sidebar-nav-item">Currently v{{ site.github.lastest_release.author }}</span>
+
+    <a class="sidebar-nav-item" href="{{ site.github.repository_url }}">GitHub project</a>
+    <a class="sidebar-nav-item" href="{{ site.github.issues_url }}">Problem?</a>
+    <span class="sidebar-nav-item">Currently {{ site.github.latest_release.tag_name }} </span>
   </nav>
 
   <div class="sidebar-item">

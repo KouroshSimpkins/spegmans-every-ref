@@ -1,0 +1,10 @@
+{% for post in include.group %}
+<div class="post">
+
+    <span>{{ post.code }}</span>
+
+    <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}
+    </a>
+</div>
+{% endfor %}

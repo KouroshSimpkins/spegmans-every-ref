@@ -1,20 +1,43 @@
 # Setup
-title:               Spegman's Every Ref.
-description:         'A collection of useful and interesting facts, figures and charts.'
-url:                 TODO
-baseurl:             ''
-paginate:            5
-permalink:           pretty
+title: Spegman's Every Ref.
+description: 'A collection of useful and interesting facts, figures and charts.'
+url: TODO
+baseurl: ''
+permalink: pretty
+
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://ibraheemrodrigues.com
-  email:             contact@ibraheemrodrigues.com
+  name: Ibraheem Rodrigues
+  url: https://ibraheemrodrigues.com
+  email: contact@ibraheemrodrigues.com
+
+# Collections
+
+pagination: 
+  enabled: true
+
+autopages:
+  enabled: true
+  collections:
+    layouts: 
+      - 'collection.html'
+    title: "Collection: :coll"
+    permalink: "/:coll"
+    sort_by: code
+
+collections_dir: content
+collections:
+  misc:
+    output: true
+
+defaults:
+  -
+    values:
+      layout: "post"
+
+
 
 # Gems
 plugins:
-  - jekyll-paginate
-
-# Custom vars
-version:             0.1.0
+  - jekyll-paginate-v2
