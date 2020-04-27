@@ -11,6 +11,17 @@
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">Home</a>
 
+    {% for node in site.content %}
+    {% if node.title != null %}
+    {% if node.relative_path contains "index" %}
+    <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">>
+      {{ node.title }}</a>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+
+    <a class="sidebar-nav-item" href="mailto:{{ site.owner.email }}">Problem/Suggestion?</a>
+
 
     {% assign pages_list = site.pages | sort:"url" %}
     {% for node in pages_list %}
@@ -22,10 +33,11 @@
     {% endif %}
     {% endfor %}
 
-
     <a class="sidebar-nav-item" href="{{ site.github.repository_url }}">GitHub project</a>
-    <a class="sidebar-nav-item" href="{{ site.github.issues_url }}">Problem?</a>
-    <span class="sidebar-nav-item">Currently {{ site.github.latest_release.tag_name }} </span>
+    <a class="sidebar-nav-item" href="{{ site.github.latest_release.html_url }}">Currently
+      {{ site.github.latest_release.tag_name }}
+    </a>
+
   </nav>
 
   <div class="sidebar-item">

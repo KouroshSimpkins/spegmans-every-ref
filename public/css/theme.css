@@ -1,0 +1,32 @@
+.ref-index a {
+    color: #313131;
+}
+
+.page,
+.post,
+li p  {
+    margin-bottom: 0;
+}
+
+.masthead .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.masthead-title{
+    margin: auto 0 auto 1em;
+}
+
+.masthead-image {
+    display: inline-block;
+    height: 2em;
+    margin: 0;
+}
+
+h3::before, h4::before, h5::before, h6::before {
+content: "\a0\a0";
+}
+
+.quote-attribution {
+    text-align: right;
+}

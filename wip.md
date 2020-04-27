@@ -1,7 +1,5 @@
 ---
 title: WIP Pages
-
-layout: page
 ---
 
 #### Planned pages for the future
@@ -31,3 +29,10 @@ layout: page
     - Constants
     - Elements
     - Common Alloys?
+
+#### Infrastructure
+- Link related pages
+- May need to move table of contents to side (can be quite large, like on guidelines page)
+- Multiple authors
+- Templates for page moves/merges/deletions
+- More rigrous citation specification

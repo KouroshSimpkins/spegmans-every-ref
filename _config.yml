@@ -5,39 +5,27 @@ url: TODO
 baseurl: ''
 permalink: pretty
 
+logo: /public/favicon.png
+
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+
 
 # About/contact
-author:
+owner:
   name: Ibraheem Rodrigues
   url: https://ibraheemrodrigues.com
   email: contact@ibraheemrodrigues.com
 
 # Collections
-
-pagination: 
-  enabled: true
-
-autopages:
-  enabled: true
-  collections:
-    layouts: 
-      - 'collection.html'
-    title: "Collection: :coll"
-    permalink: "/:coll"
-    sort_by: code
-
-collections_dir: content
 collections:
-  misc:
+  content:
     output: true
+    permalink: /:path
+    category: false
 
 defaults:
   -
     values:
-      layout: "post"
-
-
-
-# Gems
-plugins:
-  - jekyll-paginate-v2
+      layout: "page"
