@@ -42,6 +42,8 @@ Files can be structured in one of two ways:
 1. `<category>/<name>.md` (e.g.`misc/spoons.md`)
 2. `<category>/<name>/index.md` (e.g. `misc/spoons/spoons.md`)
 
+File names should seperate words with underscores `_` (snake case)
+
 ### Template
 ```md
 ---
@@ -82,7 +84,7 @@ To include a table of contents in on page, add the following code at the top, im
 
 Guides should be factual and to the point. However this guide is as much about interest as it is about factuality - while all included information must be true, we do not aim to be encyclopedic.
 
-We aim to collect things that are useful, unusual, or tell a story of the universal human endevour to understand and categorise the world around us.
+We aim to collect things that are useful, unusual, or tell a story of the human endevour to understand and categorise the world around us.
 
 ### Standardisation
 
@@ -114,6 +116,35 @@ When you give attribution, either link to a source as [below](#citing-sources) o
 >
 > [*Hamlet by William Shakespeare, Act 3 Scene 1*](http://shakespeare.mit.edu/hamlet/hamlet.3.1.html)
 ```
+
+### Maths
+We use MathJAX (v2) to render mathematical equations.
+
+Use `$$` to define equations:
+```
+$$ y = mx + c $$
+```
+
+> $$ y = mx + c $$
+
+
+This works for both inline and block level (automatically detected, note `$...$` is not supported by kramdown):
+
+```
+Quadratic equations have the form \$$ y = ax^2 + bx + c $$
+```
+
+> Quadratic equations have the form $$ y = ax^2 + bx + c $$
+
+To force it to render in the opposite level (inline to block and vicea versa) use `\$$ ... $$`
+
+```
+If $$ y = 0 $$ you can find x: \$$ x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} $$
+```
+
+> If $$ y = 0 $$ you can find x: \$$ x =\frac{-b\pm\sqrt{b^2-4ac}}{2a} $$
+
+The [LaTeX Wiki](https://en.wikibooks.org/wiki/LaTeX/Mathematics#Symbols) has a good reference for typesetting equations.
 
 ### Citing sources
 
@@ -173,7 +204,7 @@ layout: category
 | Mathematics | `mathematics/` | Math(s) related reference. Geometery, Numbers, Set tTheory etc. |
 | Science | `science/` | Scientific reference - Physics, Chemistry, Biology etc.  |
 | Standards | `standards/` | Reference for standards - e.g from ISO, w3c, Unicode Consortium |
-| Languages | `languages/` | Languages, alphabets and linguistics reference |
+| Languages | `language/` | Languages, alphabets and linguistics reference |
 
 ### Adding an author
 To add youself as an author, add an entry to `/_data/authors.yml`, like follows:
@@ -181,7 +212,7 @@ To add youself as an author, add an entry to `/_data/authors.yml`, like follows:
 ```yml
 j_spegman:
     name: Jeg Spegman
-    email: jegg@speg.info
+    email: jeg@speg.info
     url: https://twitter.com/spegman
 ```
 

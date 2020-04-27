@@ -5,7 +5,7 @@ title: Home
 
 {{ site.description }}
 
-> We aim to collect things that are useful, unusual, or tell a story of the universal human endevour to understand and categorise the world.
+> We aim to collect things that are useful, unusual, or tell a story of the human endevour to understand and categorise the world.
 >
 >[*Guidelines*](/guidelines#writing-guidelines)
 

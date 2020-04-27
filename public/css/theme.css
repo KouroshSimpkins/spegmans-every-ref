@@ -30,3 +30,9 @@ content: "\a0\a0";
 .quote-attribution {
     text-align: right;
 }
+
+@media (min-width: 56em) {
+    .container {
+      max-width: 50rem;
+    }
+  }
