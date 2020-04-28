@@ -10,7 +10,7 @@ author: ibraheem_rodrigues
 
 Contributions are welcome, as long as they fit the style, aims and ethos of this project, detailed here.
 
-If you have any suggestions or issues either sumbit a [github issue]({{site.github.issues_url}}) or [email me](site.author.email).
+If you have any suggestions or issues either submit a [github issue]({{site.github.issues_url}}) or [email me](site.author.email).
 
 If you want to create content for this project, please first read over these guidelines.
 
@@ -36,13 +36,13 @@ These are the key terms, that should be used when refereing to parts of the proj
 
 All pages should be written in markdown. This site uses [kramdown-flavour markdown](https://kramdown.gettalong.org/) as is standard for Jekyll sites.
 
-Page files should be under their respective [category](#current-categories) in the `_content` folder, and must include the front matter as deffined [below](#template).
+Page files should be under their respective [category](#current-categories) in the `_content` folder, and must include the front matter as defined [below](#template).
 
 Files can be structured in one of two ways:
 1. `<category>/<name>.md` (e.g.`misc/spoons.md`)
 2. `<category>/<name>/index.md` (e.g. `misc/spoons/spoons.md`)
 
-File names should seperate words with underscores `_` (snake case)
+File names should separate words with underscores `_` (snake case)
 
 ### Template
 ```md
@@ -84,7 +84,7 @@ To include a table of contents in on page, add the following code at the top, im
 
 Guides should be factual and to the point. However this guide is as much about interest as it is about factuality - while all included information must be true, we do not aim to be encyclopedic.
 
-We aim to collect things that are useful, unusual, or tell a story of the human endevour to understand and categorise the world around us.
+We aim to collect things that are useful, unusual, or tell a story of the human endeavour to understand and categorise the world around us.
 
 ### Standardisation
 
@@ -136,7 +136,7 @@ Quadratic equations have the form \$$ y = ax^2 + bx + c $$
 
 > Quadratic equations have the form $$ y = ax^2 + bx + c $$
 
-To force it to render in the opposite level (inline to block and vicea versa) use `\$$ ... $$`
+To force it to render in the opposite level (inline to block and vice versa) use `\$$ ... $$`
 
 ```
 If $$ y = 0 $$ you can find x: \$$ x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} $$
@@ -149,8 +149,8 @@ The [LaTeX Wiki](https://en.wikibooks.org/wiki/LaTeX/Mathematics#Symbols) has a 
 ### Citing sources
 
 Prefer: \\
-**Primary souces (firsthand evidence)** over \\
- **Secondary sources (interpretations, analysies)** over \\
+**Primary sources (firsthand evidence)** over \\
+ **Secondary sources (interpretations, analyses)** over \\
  **Tertiary sources (compilations, summarisations)**.
 
 As such Wikipedia (tertiary) is usually never a good source.
@@ -200,14 +200,14 @@ layout: category
 
 | Category | Folder | Description |
 |----------|--------|-------------|
-| Miscelaneous |`misc/`| Anything taht does not belong in another category. |
-| Mathematics | `mathematics/` | Math(s) related reference. Geometery, Numbers, Set tTheory etc. |
+| Miscellaneous |`misc/`| Anything that does not belong in another category. |
+| Mathematics | `mathematics/` | Math(s) related reference. Geometry, Numbers, Set tTheory etc. |
 | Science | `science/` | Scientific reference - Physics, Chemistry, Biology etc.  |
 | Standards | `standards/` | Reference for standards - e.g from ISO, w3c, Unicode Consortium |
 | Languages | `language/` | Languages, alphabets and linguistics reference |
 
 ### Adding an author
-To add youself as an author, add an entry to `/_data/authors.yml`, like follows:
+To add yourself as an author, add an entry to `/_data/authors.yml`, like follows:
 
 ```yml
 j_spegman:
@@ -222,7 +222,7 @@ See the [template](#template) for how to list a page's author
 
 ## Versioning
 
-We aim to follow [Semantic Versioning](https://semver.org/), however as the original specification is not intended for non-code applications, the following guidelines will be used to follow semver's spirit - chiefy to communicate intent.
+We aim to follow [Semantic Versioning](https://semver.org/), however as the original specification is not intended for non-code applications, the following guidelines will be used to follow semver's spirit - chiefly to communicate intent.
 
 > Under this scheme, version numbers and the way they change convey meaning about the underlying code and what has been modified from one version to the next.
 >
@@ -241,7 +241,7 @@ Changes to the content of the site (specifically everything under `/_content/`) 
 
 **Important notes when changing pages (MINOR changes):**
 
-If a page is moved or marged with another, the new page should redirect from the old page url:
+If a page is moved or merged with another, the new page should redirect from the old page url:
 
 ```yml
 ---
@@ -255,7 +255,7 @@ Whether these temporary pages should be kept after a MAJOR change should be deci
 
 ### Infrastructure Related Versioning
 
-Versions seeing updates to code and should increment version numbers as per the original semver spec, and suffix `-code` to the verion:
+Versions seeing updates to code and should increment version numbers as per the original semver spec, and suffix `-code` to the version:
 
 `MAJOR.MINOR.PATCH-code`
 
